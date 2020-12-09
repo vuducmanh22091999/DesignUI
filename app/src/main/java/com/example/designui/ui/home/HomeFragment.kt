@@ -45,7 +45,7 @@ class HomeFragment : Fragment(), View.OnClickListener {
 
     private fun getDate() {
         val currentDateTime = Calendar.getInstance().time
-        val dateFormat = SimpleDateFormat("MMMM dd, YYYY", Locale.getDefault())
+        val dateFormat = SimpleDateFormat("MMM dd, YYYY", Locale.getDefault())
         tvDate.text = dateFormat.format(currentDateTime)
     }
 
